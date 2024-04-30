@@ -16,3 +16,15 @@ console.log(variable1);
 
 variable1 = variable1 + 1;
 console.log(variable1);
+
+
+let cartQuantity = 0;
+
+function openCart() {
+    console.log(`Cart quantity: ${cartQuantity}`);
+}
+
+function addCart() {
+    cartQuantity = cartQuantity + 1;
+    console.log(`Cart quantity: ${cartQuantity}`);
+}
