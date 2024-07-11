@@ -60,8 +60,22 @@ console.log(object3 === object1);
 console.log(object2 === object1);
 
 const object4 = {
-    message: 'Good job!'
+    message: 'Good job!',
+    price: 500
 };
-const { message } = object4;
+const { message, price } = object4;
 /*or const message = obeject4.message;*/
-console.log(object4);
+console.log(message);
+console.log(price);
+
+const object5 ={
+    message,
+    /*method: function function1() {
+        console.log('method');
+    } or*/ 
+    method() {
+        console.log('method');
+    }
+};
+console.log(object5);
+object5.method();
