@@ -60,22 +60,22 @@ function playGame(playerMove) {
 
 
     if (computerMove === "rock") {
-        computerRock.style.color = "#ffcc00"
-        bigHandComputer.classList.add('fa-hand-fist',   'icon-computer-animation')
+        computerRock.style.color = "rgb(14, 13, 13)"
+        bigHandComputer.classList.add('fa-hand-fist')
     } else {
         computerRock.style.color = "aliceblue"
         bigHandComputer.classList.remove('fa-hand-fist')
 
     }
     if (computerMove === "paper") {
-        computerPaper.style.color = "#ffcc00"
+        computerPaper.style.color = "rgb(14, 13, 13)"
         bigHandComputer.classList.add('fa-hand')
     } else {
         computerPaper.style.color = "aliceblue"
         bigHandComputer.classList.remove('fa-hand')
     }
     if (computerMove === "scissors") {
-        computerscissors.style.color = "#ffcc00"
+        computerscissors.style.color = "rgb(14, 13, 13)"
         bigHandComputer.classList.add('fa-hand-peace')
     } else {
         computerscissors.style.color = "aliceblue"

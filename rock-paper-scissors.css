@@ -3,15 +3,16 @@
 }
 
 body {
-    background-color: #181a27 !important;
+    background-image: linear-gradient(to right, black, rgb(36, 36, 119)) !important;
 }
 
 .player-icon:hover {
-    color: #ffcc00 !important;
+    color: grey !important;
     transition: 0.3s;
 }
 
-.player-icon, .computer-icon {
+.player-icon,
+.computer-icon {
     margin-right: 20px;
 }
 
@@ -19,18 +20,46 @@ body {
 
 /* Common rotation animation */
 @keyframes rotateEmoji {
-    0% { transform: rotate(0deg) ;}
-    100% { transform: rotate(-80deg)  }
-  }
-  /* Scissors animation: cutting and nodding */
-  @keyframes computerAnimation {
-    0%, 100% { transform: rotate(-80deg) scale(1) }
-    25%, 75% { transform: rotate(-85deg) scale(1.1)  }
-    50% { transform: rotate(-90deg) scale(1)  }
-  }
-  
-  /* Apply animations to each emoji */
-  .icon-computer-animation {
-    animation: rotateIcon 1s ease-out, computerAnimation 2s ease-in-out infinite;
-  }
-  
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-80deg)
+    }
+}
+
+/* Scissors animation: cutting and nodding */
+@keyframes computerAnimation {
+
+    0%,
+    100% {
+        transform: rotate(-80deg) scale(1)
+    }
+
+    25%,
+    75% {
+        transform: rotate(-85deg) scale(1.1)
+    }
+
+    50% {
+        transform: rotate(-90deg) scale(1)
+    }
+}
+
+/* Apply animations to each emoji */
+.icon-computer-animation {
+    animation: rotateIcon 1s ease-out, computerAnimation 0.6s ease-in-out infinite;
+}
+
+.js-result {
+    position: relative;
+    top: 170px;
+    font-family: "Lobster", sans-serif;
+    color: black !important;
+    left: 160px;
+}
+
+.js-score {
+    
+}
