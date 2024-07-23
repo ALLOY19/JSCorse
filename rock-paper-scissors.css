@@ -3,7 +3,7 @@
 }
 
 body {
-    background-image: linear-gradient(to right, black, rgb(36, 36, 119)) !important;
+    background-image: linear-gradient(to right, rgb(17, 16, 16), rgb(36, 36, 119)) !important;
 }
 
 .player-icon:hover {
@@ -57,9 +57,30 @@ body {
     top: 170px;
     font-family: "Lobster", sans-serif;
     color: black !important;
-    left: 160px;
+    left: 147px;
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.82);
 }
 
 .js-score {
-    
+    position: relative;
+    right: 50px;
+    font-family: "lobster", sans-serif;
+    bottom: 50px;
 }
+
+.reset-btn {
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    position: relative;
+    left: 95%;
+    bottom: 200px;
+    background-color: rgb(58, 56, 56);
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.82);
+}
+
+.reset-btn i {
+    font-size: 20px;
+    color: black;
+}
+
