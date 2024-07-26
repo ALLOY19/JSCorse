@@ -127,4 +127,12 @@ function resetBtn() {
     localStorage.removeItem('score');
     updateScoreElement();
 }
+function closemenu() {
+    menu.style.top = "-100vh";
+    menu.classList.remove('backdrop')
+}
+function openmenu() {
+    menu.style.top = "16%";
+    menu.classList.add('backdrop')
+}
 

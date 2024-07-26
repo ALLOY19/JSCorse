@@ -68,19 +68,65 @@ body {
     bottom: 50px;
 }
 
-.reset-btn {
+.menu-bar {
     height: 40px;
     width: 40px;
     border-radius: 10px;
     position: relative;
     left: 95%;
-    bottom: 200px;
+    bottom: 150px;
     background-color: rgb(58, 56, 56);
     box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.82);
 }
 
-.reset-btn i {
+.menu-bar i {
     font-size: 20px;
     color: black;
 }
 
+.menu-box {
+    height: 120px;
+    width: 50px;
+    background: linear-gradient(to left, rgb(32, 32, 32),grey);
+    position: absolute;
+    top: 150%;
+    left: 90%;
+    padding: 50px;
+    z-index: 10;
+    transition: transform 0.1s, top 0.1s;
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.82);
+    border-radius: 20px;
+}
+
+.backdrop::before{
+    content: "";
+    background: rgba(0,0,0,0.6);
+    position: fixed;
+    top: 0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.x-mark {
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.82);
+    position: absolute;
+    bottom: 20%;
+    left: 30%;
+}
+
+.x-mark i {
+    color: black;
+    font-size: 15px;
+}
+
+.restart-btn {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    border-radius: 20px;
+}

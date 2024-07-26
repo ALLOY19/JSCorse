@@ -68,12 +68,23 @@
         <p class="js-score badge"></p>
     </div>
 
-    <button data-bs-toggle="tooltip" title="Restart" class="reset-btn" onclick="
-        resetBtn()
+    <button data-bs-toggle="tooltip" title="Menu" class="menu-bar" onclick="
+        openmenu()
     ">
-            <i class="fa-solid fa-rotate-right"></i>
+        <i class="fa-solid fa-bars"></i>
     </button>
 
+    <div class="menu-box" id="menu">
+        <div class="right-links"></div>
+        <button onclick="closemenu()" class="x-mark">
+            <i class="fa-sharp fa-solid fa-xmark"></i>
+            <button class="restart-btn"><a onclick="
+                resetBtn()
+            " class="fa-solid fa-rotate-right"></a></button>
+        </button>
+    </div>
+    </div>
+ 
     <script src="./rock-paper-scissors2.js">
 
     </script>
