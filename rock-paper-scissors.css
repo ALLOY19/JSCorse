@@ -130,3 +130,7 @@ body {
     left: 30%;
     border-radius: 20px;
 }
+
+.restart-btn a {
+    color: black;
+}
